@@ -1,0 +1,13 @@
+package com.ui.test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class LoginTest
+{
+    public static void main(String[] a)
+    {
+       WebDriver wd =  new ChromeDriver();
+       wd.get("https://automationpractice.techwithjatin.com/login");
+            
+    }
+}
