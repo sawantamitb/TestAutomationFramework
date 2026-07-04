@@ -7,7 +7,7 @@ import com.constants.Browser;
 import com.ui.pages.HomePage;
 import com.ui.pojo.User;
 
-public class LoginTest2
+public class LoginTestWithJSON
 {
   HomePage homePage;
       // To test using jsonreader and dataprovider, we can use the following code
@@ -17,15 +17,16 @@ public class LoginTest2
         homePage = new HomePage(Browser.CHROME);        
       }
     
-    @Test (description = "Login Test for Automation Practice Website", 
+     @Test (description = "Login Test for Automation Practice Website", 
           groups = {"smoke", "regression"}, 
-          dataProvider = "loginDataProvider", 
+          dataProvider = "loginJSONDataProvider", 
           dataProviderClass = com.ui.dataproviders.LoginDataProvider.class)
-    public void loginTest(User user)
+    public void loginTestWithJSON(User user)
     {
       homePage.goToLoginPage().doLoginWith(user.getUsername(), user.getPassword());
       System.out.println("Login Test Completed Successfully for " + homePage.getUserName());
       assertEquals("Amit Sawant", homePage.getUserName());
       homePage.closeBrowser();
     }
+   
 }
