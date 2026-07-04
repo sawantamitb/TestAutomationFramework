@@ -1,0 +1,6 @@
+com\ui\pages\MyAccountPage.class
+com\utility\PropertiesUtil.class
+com\utility\BrowserUtility.class
+com\ui\pages\LoginPage.class
+com\constants\Env.class
+com\constants\Browser.class
