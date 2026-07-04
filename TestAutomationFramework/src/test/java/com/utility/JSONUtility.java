@@ -11,7 +11,7 @@ import com.ui.pojo.Environment;
 
 public class JSONUtility 
 {
-    public static String readJSON(Env env) 
+    public static Environment readJSON(Env env) 
     {
         System.out.println("JSONUtility");
         Gson gson = new Gson();
@@ -34,7 +34,8 @@ public class JSONUtility
                 throw new IllegalArgumentException("Environment '" + env + "' was not found in config.json");
             }
             Environment environment = config.getEnvironments().get(env.name());
-            return environment.getUrl();
+            return environment;
+            
         } catch (Exception e) {
             throw new RuntimeException("Unable to read config file: " + jsonFile.getAbsolutePath(), e);
         }
