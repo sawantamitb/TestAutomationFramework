@@ -35,7 +35,6 @@ public class JSONUtility
             }
             Environment environment = config.getEnvironments().get(env.name());
             return environment;
-            
         } catch (Exception e) {
             throw new RuntimeException("Unable to read config file: " + jsonFile.getAbsolutePath(), e);
         }

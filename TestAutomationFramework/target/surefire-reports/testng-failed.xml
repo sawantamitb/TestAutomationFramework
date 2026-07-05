@@ -3,12 +3,12 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.ui.test.LoginTest2">
+      <class name="com.ui.test.LoginTestWithJSONFlakyTest">
         <methods>
-          <include name="loginTest"/>
+          <include name="loginTestWithCSVFlakyTestCheck" invocation-numbers="1"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.ui.test.LoginTest2 -->
+      </class> <!-- com.ui.test.LoginTestWithJSONFlakyTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

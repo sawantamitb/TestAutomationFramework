@@ -1,7 +1,12 @@
 package com.ui.pojo;
 
+import com.google.gson.annotations.SerializedName;
+
 public class User {
+    @SerializedName("Username")
     private String username;
+
+    @SerializedName("Password")
     private String password;
 
     public User() {

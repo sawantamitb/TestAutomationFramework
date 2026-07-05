@@ -3,6 +3,7 @@ import com.utility.BrowserUtility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import com.ui.pojo.User;
 
 public final class LoginPage extends BrowserUtility {
 
@@ -14,9 +15,9 @@ public final class LoginPage extends BrowserUtility {
         super(driver);        
     }
 
-    public MyAccountPage doLoginWith(String email, String password) {
-        enterText(EMAIL_INPUT, "labisok230@hidevak.com");
-        enterText(PASSWORD_INPUT, "Test@123");
+    public MyAccountPage doLoginWith(User user) {
+        enterText(EMAIL_INPUT, user.getUsername());
+        enterText(PASSWORD_INPUT, user.getPassword());
         clickOn(SIGN_IN_LINK);
         MyAccountPage myAccountPage = new MyAccountPage(getDriver());
         return myAccountPage;

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,  3 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.ui.test.LoginTestWithJSONFlakyTest" class="method navigator-link" hash-for-method="loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])">loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Surefire_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.ui.test.LoginTestWithJSONFlakyTest" class="method navigator-link" hash-for-method="loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])">loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.ui.test.LoginTestWithJSONFlakyTest" class="method navigator-link" hash-for-method="loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])">loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.ui.test.LoginTestWithJSONFlakyTest" class="method navigator-link" hash-for-method="loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])">loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +141,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.ui.test.LoginTest2" class="method navigator-link" hash-for-method="loginTest(User [username=null, password=null])">loginTest(User [username=null, password=null])</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.ui.test.LoginTest2" class="method navigator-link" hash-for-method="loginTest(User [username=null, password=null])">loginTest(User [username=null, password=null])</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.ui.test.LoginTest2" class="method navigator-link" hash-for-method="loginTest(User [username=null, password=null])">loginTest(User [username=null, password=null])</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.ui.test.LoginTestWithJSONFlakyTest" class="method navigator-link" hash-for-method="loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@123])">loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@123])</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -128,38 +156,174 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-passed">
+          <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.ui.test.LoginTest2</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.ui.test.LoginTestWithJSONFlakyTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest(User [username=null, password=null])">
-                  </a> <!-- loginTest(User [username=null, password=null]) -->
-                  <span class="method-name">loginTest</span>
-                  <span class="parameters">(User [username=null, password=null])</span>
+                  <a name="loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])">
+                  </a> <!-- loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234]) -->
+                  <span class="method-name">loginTestWithCSVFlakyTestCheck</span>
+                  <span class="parameters">(User [username=labisok230@hidevak.com, password=Test@1234])</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[title=&apos;View my customer account&apos;] span&quot;}
+  (Session info: chrome=149.0.7827.201)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eff873c7db081a2458015f0b5f9ce582, findElement {value=a[title=&apos;View my customer account&apos;] span, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.201, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\sawan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61517}, goog:processID: 40660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61517/devtoo..., se:cdpVersion: 149.0.7827.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eff873c7db081a2458015f0b5f9ce582
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at com.ui.pages.HomePage.getUserName(HomePage.java:25)
+	at com.ui.test.LoginTestWithJSONFlakyTest.loginTestWithCSVFlakyTestCheck(LoginTestWithJSONFlakyTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Login Test for Automation Practice Website)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.ui.test.LoginTestWithJSONFlakyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])">
+                  </a> <!-- loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234]) -->
+                  <span class="method-name">loginTestWithCSVFlakyTestCheck</span>
+                  <span class="parameters">(User [username=labisok230@hidevak.com, password=Test@1234])</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[title=&apos;View my customer account&apos;] span&quot;}
+  (Session info: chrome=149.0.7827.201)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f256a109d48e29e819899dd4a8f31428, findElement {value=a[title=&apos;View my customer account&apos;] span, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.201, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\sawan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64698}, goog:processID: 39048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64698/devtoo..., se:cdpVersion: 149.0.7827.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f256a109d48e29e819899dd4a8f31428
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at com.ui.pages.HomePage.getUserName(HomePage.java:25)
+	at com.ui.test.LoginTestWithJSONFlakyTest.loginTestWithCSVFlakyTestCheck(LoginTestWithJSONFlakyTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Login Test for Automation Practice Website)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest(User [username=null, password=null])">
-                  </a> <!-- loginTest(User [username=null, password=null]) -->
-                  <span class="method-name">loginTest</span>
-                  <span class="parameters">(User [username=null, password=null])</span>
+                  <a name="loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])">
+                  </a> <!-- loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234]) -->
+                  <span class="method-name">loginTestWithCSVFlakyTestCheck</span>
+                  <span class="parameters">(User [username=labisok230@hidevak.com, password=Test@1234])</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[title=&apos;View my customer account&apos;] span&quot;}
+  (Session info: chrome=149.0.7827.201)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f89807700446dad58a00c0efce2591fd, findElement {value=a[title=&apos;View my customer account&apos;] span, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.201, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\sawan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55220}, goog:processID: 28032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55220/devtoo..., se:cdpVersion: 149.0.7827.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f89807700446dad58a00c0efce2591fd
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at com.ui.pages.HomePage.getUserName(HomePage.java:25)
+	at com.ui.test.LoginTestWithJSONFlakyTest.loginTestWithCSVFlakyTestCheck(LoginTestWithJSONFlakyTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Login Test for Automation Practice Website)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest(User [username=null, password=null])">
-                  </a> <!-- loginTest(User [username=null, password=null]) -->
-                  <span class="method-name">loginTest</span>
-                  <span class="parameters">(User [username=null, password=null])</span>
+                  <a name="loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])">
+                  </a> <!-- loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234]) -->
+                  <span class="method-name">loginTestWithCSVFlakyTestCheck</span>
+                  <span class="parameters">(User [username=labisok230@hidevak.com, password=Test@1234])</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[title=&apos;View my customer account&apos;] span&quot;}
+  (Session info: chrome=149.0.7827.201)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c3e690bb6707df19ed6fb1c048f168e, findElement {value=a[title=&apos;View my customer account&apos;] span, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.201, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\sawan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50434}, goog:processID: 37100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50434/devtoo..., se:cdpVersion: 149.0.7827.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c3e690bb6707df19ed6fb1c048f168e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at com.ui.pages.HomePage.getUserName(HomePage.java:25)
+	at com.ui.test.LoginTestWithJSONFlakyTest.loginTestWithCSVFlakyTestCheck(LoginTestWithJSONFlakyTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Login Test for Automation Practice Website)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ui.test.LoginTestWithJSONFlakyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@123])">
+                  </a> <!-- loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@123]) -->
+                  <span class="method-name">loginTestWithCSVFlakyTestCheck</span>
+                  <span class="parameters">(User [username=labisok230@hidevak.com, password=Test@123])</span>
                   <em>
 (Login Test for Automation Practice Website)                  </em>
                 </div> <!-- method-content -->
@@ -177,7 +341,7 @@
 &lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.ui.test.LoginTest2&quot;/&gt;
+      &lt;class name=&quot;com.ui.test.LoginTestWithJSONFlakyTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -205,7 +369,7 @@
               <span class="test-group-name">regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">loginTest</span>
+                <span class="method-in-group-name">loginTestWithCSVFlakyTestCheck</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -213,7 +377,7 @@
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">loginTest</span>
+                <span class="method-in-group-name">loginTestWithCSVFlakyTestCheck</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -233,24 +397,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.ui.test.LoginTest2')
-data.setCell(0, 3, 4135);
+data.setCell(0, 1, 'loginTestWithCSVFlakyTestCheck')
+data.setCell(0, 2, 'com.ui.test.LoginTestWithJSONFlakyTest')
+data.setCell(0, 3, 2201);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest')
-data.setCell(1, 2, 'com.ui.test.LoginTest2')
-data.setCell(1, 3, 4118);
+data.setCell(1, 1, 'loginTestWithCSVFlakyTestCheck')
+data.setCell(1, 2, 'com.ui.test.LoginTestWithJSONFlakyTest')
+data.setCell(1, 3, 1897);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginTest')
-data.setCell(2, 2, 'com.ui.test.LoginTest2')
-data.setCell(2, 3, 4035);
+data.setCell(2, 1, 'loginTestWithCSVFlakyTestCheck')
+data.setCell(2, 2, 'com.ui.test.LoginTestWithJSONFlakyTest')
+data.setCell(2, 3, 1681);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginTestWithCSVFlakyTestCheck')
+data.setCell(3, 2, 'com.ui.test.LoginTestWithJSONFlakyTest')
+data.setCell(3, 3, 1411);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginTestWithCSVFlakyTestCheck')
+data.setCell(4, 2, 'com.ui.test.LoginTestWithJSONFlakyTest')
+data.setCell(4, 3, 1172);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -276,30 +448,48 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.ui.test.LoginTest2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.ui.test.LoginTestWithJSONFlakyTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest(User [username=null, password=null])</span>
-                <span class="method-start">6993 ms</span>
+                <span class="method-name">loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@123])</span>
+                <span class="method-start">2082 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11125 ms</span>
+                <span class="method-start">3263 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest(User [username=null, password=null])</span>
-                <span class="method-start">15386 ms</span>
+                <span class="method-name">loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])</span>
+                <span class="method-start">5585 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">19422 ms</span>
+                <span class="method-start">7001 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest(User [username=null, password=null])</span>
-                <span class="method-start">23668 ms</span>
+                <span class="method-name">loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])</span>
+                <span class="method-start">9647 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">11334 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])</span>
+                <span class="method-start">14202 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">16103 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTestWithCSVFlakyTestCheck(User [username=labisok230@hidevak.com, password=Test@1234])</span>
+                <span class="method-start">19731 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
